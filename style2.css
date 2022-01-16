@@ -101,6 +101,7 @@ input, textarea, select{
     font-weight: 700;
     /* background-color: rgb(247, 108, 108); */
     border: 2px solid red;
+    cursor: pointer;
 }
 .borrar:hover{
     /* background-color: #73f141; */
