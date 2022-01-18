@@ -129,16 +129,15 @@ function borrarTarea(e){
     const dato = e.target.parentElement.innerText.length;
     const kMateria = e.target.parentElement.parentElement.parentElement.id;
 
-    // console.log(kMateria)
-//     if(dato > 2200){
-//         mostrarAlerta('UFF esa tarea se vio que estuvo larga, Lo bueno es que ya la terminamos y la podemos mandar a la chingada de una vez, has click para eliminarla de una vez por todas')
-//     }
-//     else if(dato > 1300){
-//         mostrarAlerta('Tarea larga? Bueno ya no hay mucho de que preocuparnos, Felicidades por terminarla, eres la mejor, siempre lo seras, sigue asi gg')
-//     }
-//     if (kMateria === 'matematica') {
-//         mostrarAlerta('Pinche mate, almenos ya la terminamos UwU a borrarlo...');
-//     }
+    if(dato > 2200){
+        mostrarAlerta('UFF esa tarea se vio que estuvo larga, Lo bueno es que ya la terminamos y la podemos mandar a la chingada de una vez, has click para eliminarla de una vez por todas')
+    }
+    else if(dato > 1300){
+        mostrarAlerta('Tarea larga? Bueno ya no hay mucho de que preocuparnos, Felicidades por terminarla, eres la mejor, siempre lo seras, sigue asi gg')
+    }
+    if (kMateria === 'matematica') {
+        mostrarAlerta('Pinche mate, almenos ya la terminamos UwU a borrarlo...');
+    }
 
     tareas = tareas.filter( tarea => tarea.id != id  );
     agregarHTML();
